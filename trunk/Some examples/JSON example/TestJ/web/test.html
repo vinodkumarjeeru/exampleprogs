@@ -1,0 +1,60 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script type="text/javascript">
+
+            var call = function() {
+                var name = document.getElementById("txtname").value;
+                var anything = document.getElementById("txtanything").value;
+
+               // alert(name + "" + anything);
+               console.debug(name + "" + anything);
+                alert("iside call");
+                var xmlhttp = new XMLHttpRequest();
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                      
+                        document.getElementById("test").innerHTML = xmlhttp.responseText;
+                        
+                        var obj = JSON.parse(xmlhttp.responseText);
+                        alert(obj.id);
+
+                    }
+                    ;
+
+                };
+
+                xmlhttp.open("GET", 'testServlet?name=' + name + '&anything=' + anything, true);
+                xmlhttp.send();
+
+            };
+
+
+
+            var init = function() {
+                alert("initialised");
+                document.getElementById("submit").onclick = call;
+            };
+            window.onload = init;
+
+        </script>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form method="POST" action="testServlet">
+            Name : <input type="text" id="txtname" >           <br><br>
+            Anything : <input type="text" id="txtanything">
+            <input type="button" value ="submit" id="submit" >
+        </form>
+
+        <div id="test"></div>
+    </body>
+</html>
