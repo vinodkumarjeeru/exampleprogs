@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e89e5bb8-6bff-40a7-8645-a8e35e0a121b">
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM spm_xuser]]>
+	</queryString>
+	<field name="xsr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_guid" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_firstname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_lastname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_district" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_question" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_answer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_profilepic" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_created_on" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_created_by" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_modified_on" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_modified_by" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="xsr_active" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="67248a5f-fe69-4cc9-8f19-abe3dc1b27c3"/>
+				<imageExpression><![CDATA["leaf_banner_red.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="9e65ae40-b2a3-4840-a3ad-c71b408b408a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Leaf Red Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="117" y="46" width="157" height="22" uuid="c1ae29a0-0eea-466b-9aed-5e0a98e581ab"/>
+				<text><![CDATA[Leaf Red SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="a7322f10-316d-4389-8689-06636e55307b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="34" height="15" uuid="be4a2372-82a1-4410-b10e-4686819225fd"/>
+				<text><![CDATA[xsr_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="19" width="34" height="15" uuid="5f82c62e-793f-4f54-aaed-1e770ceae4d3"/>
+				<text><![CDATA[xsr_guid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="68" y="19" width="34" height="15" uuid="186be1e5-25e8-4e82-bbe7-72b7e3a51055"/>
+				<text><![CDATA[xsr_email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="102" y="19" width="34" height="15" uuid="dd66cea3-c481-49f2-ac34-de942e3acbca"/>
+				<text><![CDATA[xsr_firstname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="136" y="19" width="34" height="15" uuid="570db14d-8d03-44be-93fd-e89b606c2a63"/>
+				<text><![CDATA[xsr_lastname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="170" y="19" width="34" height="15" uuid="70abf183-5e40-40c9-8ff9-0fa421d4c4d0"/>
+				<text><![CDATA[xsr_password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="204" y="19" width="34" height="15" uuid="4a48535b-04ed-4b09-9bd7-4ed9766b9ee7"/>
+				<text><![CDATA[xsr_district]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="238" y="19" width="34" height="15" uuid="83b0ece6-1d7d-441a-a964-4e67516f0c45"/>
+				<text><![CDATA[xsr_mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="272" y="19" width="34" height="15" uuid="3485559c-09d4-4ca6-83d0-b79763f82ffd"/>
+				<text><![CDATA[xsr_question]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="306" y="19" width="34" height="15" uuid="976a454b-4b3b-46ff-be10-893d4db5434e"/>
+				<text><![CDATA[xsr_answer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="340" y="19" width="34" height="15" uuid="0c945c52-75e7-4062-9068-782608b50782"/>
+				<text><![CDATA[xsr_profilepic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="374" y="19" width="34" height="15" uuid="353f48a6-dfa3-40c4-b1be-dd224a34ccef"/>
+				<text><![CDATA[xsr_created_on]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="408" y="19" width="34" height="15" uuid="b7451332-223f-4831-8d66-d252c31cae6b"/>
+				<text><![CDATA[xsr_created_by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="442" y="19" width="34" height="15" uuid="e6d6698b-c5b7-4cb9-99ee-0e1f6247e50b"/>
+				<text><![CDATA[xsr_modified_on]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="476" y="19" width="34" height="15" uuid="724320a6-8b2f-4423-bbbc-c3a32fbb2489"/>
+				<text><![CDATA[xsr_modified_by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="510" y="19" width="34" height="15" uuid="d12273b4-06fb-4ca4-8ec2-4d9f26dd08eb"/>
+				<text><![CDATA[xsr_active]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="89e6eb25-7cfc-443d-87a8-9eabd351962c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="34" height="15" uuid="bfa68ee4-c9ea-4056-b3ee-da1fcee973ed"/>
+				<textFieldExpression><![CDATA[$F{xsr_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="34" y="0" width="34" height="15" uuid="b197f91d-a013-402d-8c3a-c06f6a2a2c8a"/>
+				<textFieldExpression><![CDATA[$F{xsr_guid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="68" y="0" width="34" height="15" uuid="c4af6028-86b5-405a-abd0-3fc988f73aef"/>
+				<textFieldExpression><![CDATA[$F{xsr_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="102" y="0" width="34" height="15" uuid="64c209cb-30c3-4211-89f9-d787829913d0"/>
+				<textFieldExpression><![CDATA[$F{xsr_firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="136" y="0" width="34" height="15" uuid="b969531d-61ff-43a5-bf16-7b8d7017d37e"/>
+				<textFieldExpression><![CDATA[$F{xsr_lastname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="170" y="0" width="34" height="15" uuid="d390dd5c-bab7-4069-b54f-d07703eb716c"/>
+				<textFieldExpression><![CDATA[$F{xsr_password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="204" y="0" width="34" height="15" uuid="d498af1d-408c-46d2-a481-c4f1ed12e075"/>
+				<textFieldExpression><![CDATA[$F{xsr_district}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="238" y="0" width="34" height="15" uuid="41279d5c-aa42-4f3a-a0c1-1acae45ebeeb"/>
+				<textFieldExpression><![CDATA[$F{xsr_mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="272" y="0" width="34" height="15" uuid="630236b9-b5a9-4fcb-b648-ee235cf669e1"/>
+				<textFieldExpression><![CDATA[$F{xsr_question}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="306" y="0" width="34" height="15" uuid="520444fd-1b69-467a-9808-14e6f108bcc2"/>
+				<textFieldExpression><![CDATA[$F{xsr_answer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="340" y="0" width="34" height="15" uuid="5b905ceb-6483-4ff9-84ab-2b0ab1ae4b61"/>
+				<textFieldExpression><![CDATA[""+$F{xsr_profilepic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="374" y="0" width="34" height="15" uuid="fb1cefb8-7c8d-4b5b-9038-314e115d907d"/>
+				<textFieldExpression><![CDATA[$F{xsr_created_on}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="408" y="0" width="34" height="15" uuid="4f408bf7-0385-426a-a1e7-9e8480d79eac"/>
+				<textFieldExpression><![CDATA[$F{xsr_created_by}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="442" y="0" width="34" height="15" uuid="2ae1ec59-83c3-4fd9-ba6f-cb214e0bdc4d"/>
+				<textFieldExpression><![CDATA[$F{xsr_modified_on}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="476" y="0" width="34" height="15" uuid="00c45728-0bd9-40e1-ba4f-64caa7674c2e"/>
+				<textFieldExpression><![CDATA[$F{xsr_modified_by}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="510" y="0" width="34" height="15" uuid="a1fe548e-a801-4414-8014-6ac6b61df94b"/>
+				<textFieldExpression><![CDATA[$F{xsr_active}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="01b18496-0aa8-4d90-81b9-1a2199da46de"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="4c1c33d4-8ef7-4b9a-8de7-69e26f2d53fb"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="bd9ac10f-ac68-486b-bad3-999e60f65b6a"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="380a73ac-4a83-45a4-b15d-199ee1235922"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
