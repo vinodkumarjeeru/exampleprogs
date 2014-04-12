@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.model.Mail" table="mail">
+		<id column="mailid" name="mailId" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+
+		<property column="email" name="email" type="java.lang.String" />
+		<property column="mailtype" name="emailType" type="java.lang.String" />
+
+
+
+
+	</class>
+
+
+
+</hibernate-mapping>
